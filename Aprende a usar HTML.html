@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tutorial Súper Mega Ultra Explicado de HTML v1.2.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 15px 25px;
+            background: #f9fafb;
+            color: #2c3e50;
+            line-height: 1.7;
+        }
+        h1, h2, h3 {
+            color: #1a2a40;
+        }
+        code {
+            background: #e8e8e8;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            color: #2c3e50;
+        }
+        pre {
+            background: #f0f0f0;
+            color: #2c3e50;
+            padding: 18px;
+            border-radius: 7px;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+            border: 1px solid #ccc;
+            margin-bottom: 25px;
+        }
+        .note {
+            background: #dff0d8;
+            border-left: 6px solid #3c763d;
+            padding: 14px 20px;
+            margin: 25px 0;
+            font-size: 1.05em;
+        }
+        .warning {
+            background: #f8d7da;
+            border-left: 6px solid #a94442;
+            padding: 14px 20px;
+            margin: 25px 0;
+            font-size: 1.05em;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin-left: 20px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #2980b9;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            margin: 10px 10px 10px 0;
+        }
+        button:hover {
+            background-color: #1f6391;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.95em;
+            color: #777;
+            text-align: center;
+            border-top: 1px solid #ddd;
+            padding-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>¡Bienvenido al Tutorial Súper Mega Ultra Explicado de HTML <small>v1.2.0</small>!</h1>
+    <p>Este tutorial está hecho para ti, que quieres entender <strong>desde cero</strong> qué es HTML y cómo hacer tus propias páginas web de manera sencilla y paso a paso. Si algo no queda claro, aquí te lo explicamos con más detalle y con palabras fáciles.</p>
+
+    <h2>¿Qué es HTML y para qué sirve?</h2>
+    <p><strong>HTML</strong> son las siglas de <em>HyperText Markup Language</em>, que en español significa <em>Lenguaje de Marcado de Hipertexto</em>. Pero no te asustes con el nombre, simplemente es un lenguaje especial que usamos para contarle a los navegadores cómo debe ser la estructura de una página web.</p>
+    <p>Puedes pensar en HTML como el <strong>esqueleto</strong> de un sitio web. Él organiza las cosas para que el navegador sepa dónde va el título, dónde va un párrafo de texto, dónde debe aparecer una imagen o un enlace para hacer clic.</p>
+    <p>Sin HTML, no habría páginas web, porque no sabríamos cómo poner los textos, imágenes ni botones en la pantalla.</p>
+
+    <h2>La estructura básica de un archivo HTML</h2>
+    <p>Un archivo HTML es un simple archivo de texto que termina con la extensión <code>.html</code>. Para verlo, solo necesitas abrirlo con un navegador (Chrome, Firefox, Edge, etc.).</p>
+    <p>Veamos cómo es el <strong>esqueleto básico</strong> de un archivo HTML:</p>
+
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi primera página web&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;¡Hola mundo!&lt;/h1&gt;
+    &lt;p&gt;Estoy aprendiendo HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+    <h3>¿Qué significa todo esto?</h3>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code>: Esta línea le dice al navegador que usaremos HTML versión 5, que es la más moderna y estándar.</li>
+        <li><code>&lt;html lang="es"&gt; ... &lt;/html&gt;</code>: Esta etiqueta engloba toda la página web. El atributo <code>lang="es"</code> indica que el contenido está en español, para ayudar a buscadores y lectores de pantalla.</li>
+        <li><code>&lt;head&gt; ... &lt;/head&gt;</code>: Aquí dentro se pone información que no se ve directamente en la página, como el título que aparece en la pestaña del navegador, o los ajustes que ayudan a que la página funcione bien.</li>
+        <li><code>&lt;meta charset="UTF-8"&gt;</code>: Esto dice que la página usará una codificación universal para mostrar correctamente letras, acentos y símbolos.</li>
+        <li><code>&lt;title&gt; ... &lt;/title&gt;</code>: Es el título que aparece arriba, en la pestaña del navegador o cuando guardas la página en favoritos.</li>
+        <li><code>&lt;body&gt; ... &lt;/body&gt;</code>: Aquí va todo lo que sí quieres que se vea en la pantalla, como textos, imágenes, botones y más.</li>
+        <li><code>&lt;h1&gt; ... &lt;/h1&gt;</code>: Esta etiqueta crea un título grande y principal, normalmente el encabezado más importante de la página.</li>
+        <li><code>&lt;p&gt; ... &lt;/p&gt;</code>: Esto crea un párrafo de texto normal, como este que estás leyendo ahora.</li>
+    </ul>
+
+    <div class="note">
+        <strong>Nota importante:</strong> Cada etiqueta HTML tiene una etiqueta de apertura (<code>&lt;nombre&gt;</code>) y una de cierre (<code>&lt;/nombre&gt;</code>). Esto indica dónde empieza y termina esa parte del contenido. Hay algunas etiquetas que no necesitan cierre, como las imágenes (<code>&lt;img&gt;</code>).
+    </div>
+
+    <h2>Las etiquetas más importantes y para qué sirven</h2>
+    <p>Cuando creas una página, usarás muchas etiquetas para diferentes cosas. Aquí te muestro las más usadas y qué hacen:</p>
+
+    <ul>
+        <li><code>&lt;h1&gt; a &lt;h6&gt;</code>: Son títulos de diferentes tamaños, desde el más grande (<code>h1</code>) hasta el más pequeño (<code>h6</code>).</li>
+        <li><code>&lt;p&gt;</code>: Párrafo de texto.</li>
+        <li><code>&lt;a href="URL"&gt; ... &lt;/a&gt;</code>: Crea un enlace para ir a otra página o sitio cuando haces clic.</li>
+        <li><code>&lt;img src="imagen.jpg" alt="Texto alternativo"&gt;</code>: Muestra una imagen. El atributo <code>alt</code> es un texto que aparece si la imagen no carga y ayuda a personas con problemas visuales.</li>
+        <li><code>&lt;ul&gt;</code> y <code>&lt;ol&gt;</code>: Listas, las <code>ul</code> son listas sin orden (con viñetas) y <code>ol</code> son listas ordenadas (numeradas).</li>
+        <li><code>&lt;li&gt;</code>: Elementos dentro de listas.</li>
+        <li><code>&lt;div&gt;</code>: Un bloque o contenedor para agrupar cosas y poder darles estilo o organizar mejor.</li>
+    </ul>
+
+    <h3>Ejemplo práctico con estas etiquetas</h3>
+
+    <pre><code>&lt;body&gt;
+  &lt;h1&gt;Mis hobbies favoritos&lt;/h1&gt;
+  &lt;p&gt;Aquí te cuento qué me gusta hacer en mi tiempo libre.&lt;/p&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;Leer libros de aventuras.&lt;/li&gt;
+    &lt;li&gt;Jugar videojuegos.&lt;/li&gt;
+    &lt;li&gt;Crear páginas web.&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;Si quieres saber más, visita &lt;a href="https://es.wikipedia.org"&gt;Wikipedia en español&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;img src="https://via.placeholder.com/150" alt="Imagen ejemplo"&gt;
+&lt;/body&gt;
+</code></pre>
+
+    <p>Este código crea un título, un párrafo, una lista con 3 elementos, un enlace y una imagen.</p>
+
+    <h2>¿Cómo hacer tu primer archivo HTML y verlo?</h2>
+    <ol>
+        <li>Abre un programa para escribir texto simple, como Notepad en Windows o TextEdit en Mac (configurado en modo texto plano).</li>
+        <li>Copia y pega el código de ejemplo o el que hayas creado.</li>
+        <li>Guárdalo con el nombre que quieras, pero con la extensión <code>.html</code>. Por ejemplo: <code>mipagina.html</code></li>
+        <li>Ubica el archivo guardado y haz doble clic para abrirlo en tu navegador favorito.</li>
+    </ol>
+
+    <h2>Consejos para que todo salga bien</h2>
+    <ul>
+        <li>Es importante cerrar todas las etiquetas que tienen apertura, para que el navegador entienda bien tu página.</li>
+        <li>Usa comentarios para dejar notas en tu código y recordar qué hace cada parte. Por ejemplo: <code>&lt;!-- Esto es un comentario --&gt;</code>.</li>
+        <li>Experimenta y prueba cambiar textos o agregar nuevas etiquetas para ver qué pasa.</li>
+        <li>Cuando quieras darle estilo y color, aprende sobre CSS, que es el lenguaje para decorar tus páginas.</li>
+        <li>Si quieres que tu página haga cosas interactivas (como botones que respondan), aprende JavaScript después de dominar HTML y CSS.</li>
+    </ul>
+
+    <h2>Recursos para seguir aprendiendo</h2>
+    <p>Estos sitios web te ayudarán mucho para seguir aprendiendo HTML y desarrollo web:</p>
+    <ul>
+        <li><a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML en español</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">W3Schools - Tutorial HTML</a></li>
+        <li><a href="https://html.com/" target="_blank" rel="noopener noreferrer">HTML.com - Tutorial para principiantes</a></li>
+    </ul>
+
+    <div class="warning">
+        <strong>Recuerda:</strong> HTML es la base, pero para hacer sitios web bonitos y funcionales, necesitarás aprender también CSS y JavaScript. No te desesperes, poco a poco lo lograrás.
+    </div>
+
+    <h2>¿Quieres seguir aprendiendo?</h2>
+
+    <button onclick="window.location.href='file:///C:/Users/SuperUsuario/Documents/Aprende%20a%20usar%20CSS.html'">
+      Aprender CSS
+    </button>
+
+    <button onclick="window.location.href='file:///C:/Users/SuperUsuario/Documents/Aprende%20a%20usar%20JavaScript.html'">
+      Aprender JavaScript
+    </button>
+
+    <footer>
+        <p>© 2025 Tutorial Súper Mega Ultra Explicado de HTML v1.2.0 por ChatGPT y Julio (dueño de la página)</p>
+    </footer>
+</body>
+</html>
